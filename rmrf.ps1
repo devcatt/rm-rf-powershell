@@ -1,7 +1,7 @@
 function Rm-Rf {
     param ($dir)
     try {
-        Remove-Item -Recurse -Force $dir
+        rm -r -f $dir
     }
     catch { return }
 }
