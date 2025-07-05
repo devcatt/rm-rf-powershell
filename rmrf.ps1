@@ -1,7 +1,7 @@
 function Rm-Rf {
     param ($dir)
     try {
-        rm -r -f $dir
+        rm -r -force $dir
     }
     catch { return }
 }
